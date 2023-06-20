@@ -14,19 +14,16 @@ orgs.newOrg('eclipse-jdt') {
     packages_containers_internal: false,
     packages_containers_public: false,
     readers_can_create_discussions: true,
-    security_managers+: [
-    ],
     two_factor_requirement: false,
     web_commit_signoff_required: false,
   },
   webhooks+: [
-    orgs.newWebhook() {
+    orgs.newOrgWebhook('https://ci.eclipse.org/jdt/github-webhook/') {
       content_type: "json",
       events+: [
         "pull_request",
         "push"
       ],
-      url: "https://ci.eclipse.org/jdt/github-webhook/",
     },
   ],
   _repositories+:: [
@@ -46,15 +43,11 @@ orgs.newOrg('eclipse-jdt') {
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
         orgs.newBranchProtectionRule('R*maintenance') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
@@ -70,15 +63,11 @@ orgs.newOrg('eclipse-jdt') {
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
         orgs.newBranchProtectionRule('R*maintenance') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
@@ -95,15 +84,11 @@ orgs.newOrg('eclipse-jdt') {
       branch_protection_rules: [
         orgs.newBranchProtectionRule('R*maintenance') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
@@ -120,15 +105,11 @@ orgs.newOrg('eclipse-jdt') {
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
         orgs.newBranchProtectionRule('R*maintenance') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
@@ -145,15 +126,11 @@ orgs.newOrg('eclipse-jdt') {
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
         orgs.newBranchProtectionRule('R*maintenance') {
           required_approving_review_count: 0,
-          required_status_checks+: [
-          ],
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
