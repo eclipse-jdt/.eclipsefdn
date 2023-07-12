@@ -56,6 +56,7 @@ orgs.newOrg('eclipse-jdt') {
     orgs.newRepo('eclipse.jdt.core') {
       allow_merge_commit: false,
       default_branch: "master",
+      has_discussions: true,
       has_projects: false,
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
