@@ -4,7 +4,6 @@ orgs.newOrg('eclipse-jdt') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
     default_repository_permission: "none",
-    default_workflow_permissions: "write",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     members_can_fork_private_repositories: true,
@@ -17,6 +16,10 @@ orgs.newOrg('eclipse-jdt') {
     ],
     two_factor_requirement: false,
     web_commit_signoff_required: false,
+    workflows+: {
+      actions_can_approve_pull_request_reviews: false,
+      default_workflow_permissions: "write",
+    },
   },
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/jdt/github-webhook/') {
