@@ -32,8 +32,6 @@ orgs.newOrg('eclipse-jdt') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('eclipse.jdt') {
@@ -41,8 +39,6 @@ orgs.newOrg('eclipse-jdt') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -62,8 +58,6 @@ orgs.newOrg('eclipse-jdt') {
       default_branch: "master",
       has_discussions: true,
       has_projects: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -83,8 +77,6 @@ orgs.newOrg('eclipse-jdt') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('R*maintenance') {
@@ -104,8 +96,6 @@ orgs.newOrg('eclipse-jdt') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -125,8 +115,6 @@ orgs.newOrg('eclipse-jdt') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -144,8 +132,6 @@ orgs.newOrg('eclipse-jdt') {
     orgs.newRepo('jdt-website') {
       allow_update_branch: false,
       default_branch: "master",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
   ],
