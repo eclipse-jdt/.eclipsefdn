@@ -32,11 +32,13 @@ orgs.newOrg('eclipse-jdt') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
+      allow_merge_commit: true,
+      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
     orgs.newRepo('eclipse.jdt') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -54,8 +56,8 @@ orgs.newOrg('eclipse-jdt') {
       ],
     },
     orgs.newRepo('eclipse.jdt.core') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_discussions: true,
       has_projects: false,
       web_commit_signoff_required: false,
@@ -73,8 +75,8 @@ orgs.newOrg('eclipse-jdt') {
       ],
     },
     orgs.newRepo('eclipse.jdt.core.binaries') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -92,8 +94,8 @@ orgs.newOrg('eclipse-jdt') {
       ],
     },
     orgs.newRepo('eclipse.jdt.debug') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -111,8 +113,8 @@ orgs.newOrg('eclipse-jdt') {
       ],
     },
     orgs.newRepo('eclipse.jdt.ui') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -130,8 +132,10 @@ orgs.newOrg('eclipse-jdt') {
       ],
     },
     orgs.newRepo('jdt-website') {
+      allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
   ],
