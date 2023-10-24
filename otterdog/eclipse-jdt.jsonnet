@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-jdt') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     members_can_fork_private_repositories: true,
@@ -35,6 +34,10 @@ orgs.newOrg('eclipse-jdt') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('eclipse.jdt') {
       default_branch: "master",
@@ -42,6 +45,10 @@ orgs.newOrg('eclipse-jdt') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -61,6 +68,10 @@ orgs.newOrg('eclipse-jdt') {
       has_discussions: true,
       has_projects: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -80,6 +91,10 @@ orgs.newOrg('eclipse-jdt') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('R*maintenance') {
           required_approving_review_count: 0,
@@ -99,6 +114,10 @@ orgs.newOrg('eclipse-jdt') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -118,6 +137,10 @@ orgs.newOrg('eclipse-jdt') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -137,6 +160,9 @@ orgs.newOrg('eclipse-jdt') {
       default_branch: "master",
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
     },
   ],
 }
