@@ -15,7 +15,7 @@ orgs.newOrg('eclipse-jdt') {
     two_factor_requirement: false,
     web_commit_signoff_required: false,
     workflows+: {
-      actions_can_approve_pull_request_reviews: false,
+      actions_can_approve_pull_request_reviews: true,
       default_workflow_permissions: "write",
     },
   },
@@ -45,7 +45,7 @@ orgs.newOrg('eclipse-jdt') {
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
+        actions_can_approve_pull_request_reviews: true,
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
@@ -68,7 +68,7 @@ orgs.newOrg('eclipse-jdt') {
       has_projects: false,
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
+        actions_can_approve_pull_request_reviews: true,
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
@@ -91,7 +91,7 @@ orgs.newOrg('eclipse-jdt') {
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
+        actions_can_approve_pull_request_reviews: true,
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
@@ -114,7 +114,7 @@ orgs.newOrg('eclipse-jdt') {
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
+        actions_can_approve_pull_request_reviews: true,
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
@@ -137,7 +137,7 @@ orgs.newOrg('eclipse-jdt') {
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
+        actions_can_approve_pull_request_reviews: true,
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
