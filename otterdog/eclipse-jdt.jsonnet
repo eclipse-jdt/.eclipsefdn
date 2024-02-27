@@ -6,8 +6,6 @@ orgs.newOrg('eclipse-jdt') {
     description: "",
     members_can_fork_private_repositories: true,
     name: "Eclipse JDT",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     readers_can_create_discussions: true,
     security_managers+: [
       "eclipse-jdt-committers"
@@ -106,6 +104,7 @@ orgs.newOrg('eclipse-jdt') {
     orgs.newRepo('eclipse.jdt.debug') {
       default_branch: "master",
       delete_branch_on_merge: false,
+      has_discussions: true,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
