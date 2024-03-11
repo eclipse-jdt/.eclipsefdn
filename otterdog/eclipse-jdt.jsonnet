@@ -27,7 +27,6 @@ orgs.newOrg('eclipse-jdt') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
-      allow_merge_commit: false,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
       workflows+: {
