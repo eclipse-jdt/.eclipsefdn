@@ -124,6 +124,7 @@ orgs.newOrg('eclipse-jdt') {
       ],
     },
     orgs.newRepo('eclipse.jdt.ui') {
+      allow_merge_commit: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       has_projects: false,
