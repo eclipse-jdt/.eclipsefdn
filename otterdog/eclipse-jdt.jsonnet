@@ -10,7 +10,6 @@ orgs.newOrg('eclipse-jdt') {
     security_managers+: [
       "eclipse-jdt-committers"
     ],
-    two_factor_requirement: false,
     web_commit_signoff_required: false,
     workflows+: {
       default_workflow_permissions: "write",
