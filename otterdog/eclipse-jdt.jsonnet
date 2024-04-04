@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-jdt') {
     description: "",
     members_can_fork_private_repositories: true,
     name: "Eclipse JDT",
-    readers_can_create_discussions: true,
     security_managers+: [
       "eclipse-jdt-committers"
     ],
