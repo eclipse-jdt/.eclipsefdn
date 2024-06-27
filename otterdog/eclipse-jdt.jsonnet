@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-jdt') {
   settings+: {
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     members_can_fork_private_repositories: true,
     name: "Eclipse JDT",
