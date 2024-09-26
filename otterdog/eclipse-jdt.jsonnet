@@ -74,6 +74,11 @@ orgs.newOrg('eclipse-jdt') {
           requires_strict_status_checks: true,
         },
       ],
+      secrets: [
+        orgs.newRepoSecret('JDT_BOT_PAT') {
+          value: "pass:bots/eclipse.jdt/github.com/token-hd5020",
+        },
+      ],
     },
     orgs.newRepo('eclipse.jdt.core.binaries') {
       default_branch: "master",
@@ -119,6 +124,11 @@ orgs.newOrg('eclipse-jdt') {
           requires_strict_status_checks: true,
         },
       ],
+      secrets: [
+        orgs.newRepoSecret('JDT_BOT_PAT') {
+          value: "pass:bots/eclipse.jdt/github.com/token-hd5020",
+        },
+      ],
     },
     orgs.newRepo('eclipse.jdt.ui') {
       allow_merge_commit: false,
@@ -140,6 +150,11 @@ orgs.newOrg('eclipse-jdt') {
           required_approving_review_count: 0,
           requires_status_checks: false,
           requires_strict_status_checks: true,
+        },
+      ],
+      secrets: [
+        orgs.newRepoSecret('JDT_BOT_PAT') {
+          value: "pass:bots/eclipse.jdt/github.com/token-hd5020",
         },
       ],
     },
