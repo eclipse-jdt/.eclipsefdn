@@ -5,9 +5,6 @@ orgs.newOrg('eclipse.jdt', 'eclipse-jdt') {
     description: "",
     members_can_fork_private_repositories: true,
     name: "Eclipse JDT",
-    security_managers+: [
-      "eclipse-jdt-committers"
-    ],
     web_commit_signoff_required: false,
     workflows+: {
       default_workflow_permissions: "write",
