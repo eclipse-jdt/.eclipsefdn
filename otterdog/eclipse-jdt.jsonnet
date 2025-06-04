@@ -49,6 +49,11 @@ orgs.newOrg('eclipse.jdt', 'eclipse-jdt') {
           requires_strict_status_checks: true,
         },
       ],
+      secrets: [
+        orgs.newRepoSecret('JDT_BOT_PAT') {
+          value: "pass:bots/eclipse.jdt/github.com/token-hd5020",
+        },
+      ],
     },
     orgs.newRepo('eclipse.jdt.core') {
       allow_merge_commit: false,
