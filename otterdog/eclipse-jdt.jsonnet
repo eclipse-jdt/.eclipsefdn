@@ -137,6 +137,7 @@ orgs.newOrg('eclipse.jdt', 'eclipse-jdt') {
       allow_merge_commit: false,
       default_branch: "master",
       delete_branch_on_merge: true,
+      has_discussions: true,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
